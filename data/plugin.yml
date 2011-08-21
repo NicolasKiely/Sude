@@ -1,0 +1,74 @@
+name: Sude
+main: metal.sude.Sude
+version: 0.1
+commands:
+    sude-buying:
+        description: If item is given, lists buyers of item, sorted with highest bid first. If no item given, displays list of selling items.
+        usage: /sd-b [item]
+        permission: sude.list
+    sd-b:
+        description: Same as /sude-buying
+    
+    sude-selling:
+        description: If item is given, lists sellers of item, sorted from lowest price first. If no item given, displays list of buying items
+        usage: /sd-s [item]
+        permission: sude.list
+    sd-s:
+        description: Same as /sude-selling
+    
+    sude-player-buying:
+        description: Lists what a player is buying. If player is omitted, shows what you are buying
+        usage: /sd-pb [player]
+        permission: sude.list
+    sd-pb:
+        description: Same as /sude-player-buying
+    
+    sude-player-selling:
+        description: Lists what a player is selling. If player is omitted, shows what you are selling
+        usage: /sd-ps [player]
+        permission: sude.list
+    sd-ps:
+        description: Same as /sude-player-selling
+
+
+    sude-add-buying:
+        description: Adds you to list of buyers of item. Price is bid for a bundle (Default = 1) of item. Max num refers to maximum items willing to sell, -1 indicating no preference
+        usage: /sd-ab <item> <price> [bundle size=1] [max num = -1]
+        permission: sude.edit
+    sd-ab:
+        description: Same as /sude-add-buying
+
+    sude-add-selling:
+        description: Adds you to list of sellers of item. Price is bid for a bundle (Default = 1) of item. Max num refers to maximum items willing to sell, -1 indicating no preference
+        usage: /sd-as <item> <price> [bundle size=1] [max num = -1]
+        permission: sude.edit
+    sd-as:
+        description: Same as /sude-add-selling
+
+    sude-clear-buying:
+        description: Clears your buying entry for item. If no item specified, clears all of your entries
+        usage: /sd-cb [item]
+        permission: sude.edit
+    sd-cb:
+        description: Same as /sude-clear-buying
+
+    sude-clear-selling:
+        description: Clears your selling entry for item. If no item specified, clears all of your entries
+        usage: /sd-cs [item]
+        permission: sude.edit
+    sd-cs:
+        description: Same as /sude-clear-selling
+
+
+    sude-sudo:
+        description: The plugin treats you as another player. If player not specified, returns who you're sudo'd as. Use "/sd-u #" to revoke back to your original status.
+        usage: [player]
+        permission: sude.admin
+    sd-u:
+        description: Same as /sude-sudo
+
+    sude:
+        description: Supply/Demand (Sude)) plugin by MetalMeerkat. Type /<sude-command> ? for help on that command. Type /sude-cmd for list of commands.
+
+    sude-cmd:
+        description: /sude-buying, /sude-selling, /sude-player-buying, /sude-player-selling, /sude-add-buying, /sude-add-selling, /sude-clear-buying, /sude-clear-selling, /sude-sudo, /sude, /sude-cmd
