@@ -8,7 +8,10 @@ srcDir="src"
 dataDir="data"
 
 # Final jar name
-finalName="Sude-v0.1"
+finalJarName="Sude.jar"
+
+# Final distribution name
+finalName="Sude-v0.1.1.tar.gz"
 
 # Dependencies
 depend="./dependencies/bukkit-0.0.1-SNAPSHOT.jar:./dependencies/Permissions.jar"
@@ -76,8 +79,10 @@ done
 
 echo "Archiving . . . "
 cd $distDir
-jar cf $finalName.jar *
-cd ..
+jar cf $finalJarName *
+cd ../..
+tar czf sude/dist/$finalName sude/dist/$finalJarName sude/license.txt sude/README.txt
+cd sude
 
 echo "Done . . . "
 exit 0
