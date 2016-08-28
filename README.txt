@@ -3,12 +3,10 @@
 +-----+-----------------+
 +=====+ Bukkit Plugin   |
 +-----+-----------------+
-+=====+ By MetalMeerkat |
++=====+ By Nic Kiely    |
 +-----+-----------------+
-+=====| Beta            |
++=====| Release         |
 +-----+-----------------+
-
-Contact info (for bugs 'n dev 'n stuff): My hotmail account is metalmeerkat.
 
 
 ==//=====\\==
